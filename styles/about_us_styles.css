@@ -1,0 +1,78 @@
+.section__HeroBannerContainer{    
+    display: flex;
+    position: relative;
+    max-width: 100%;       
+    height: 200px;
+    width: 100%;
+    background: url(https://via.placeholder.com/2000x300?text=_) no-repeat center center/cover;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+}
+.section__AboutUsContainer{
+    width: 60%;
+    margin: auto;
+    padding-bottom: 30px;    
+}
+.section__text{    
+    display: flex;
+    flex-direction: column;    
+    text-align: justify;
+    margin: auto;    
+    padding: 30px;
+    align-items: center;
+}
+.section__text p{
+    padding: 2px;    
+}
+.section__TeamMember{
+    display: flex;
+    margin: auto;
+    padding: 20px;    
+    
+}
+.section__TeamMember img{
+    max-width: 40%;   
+    object-fit: contain;
+    transition: all 300ms;
+    position: relative;
+}
+.section__TeamMember img:hover{
+    transform: scale(1.5);
+}
+.section__Member{
+    display: flex;    
+    padding: 15px;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+}
+/*Media querys*/
+/*small*/
+@media (max-width: 767px){
+    .section__AboutUsContainer{
+        width: 80%;
+    }
+    .section__TeamMember{
+        justify-content: flex-end;
+        padding: 3px;
+        width: 100%;
+    }
+    .section__TeamMember img{
+        margin: auto;
+        max-width: 50%;
+    }
+    .section__TeamMember h2{
+        font-size: 1rem;
+    }
+    .section__TeamMember p {
+        font-size: .7rem;
+    }
+    .section__Member{
+        width: 40%;
+        padding: 0 0 0 15px;
+    }
+}
+
